@@ -7,13 +7,7 @@
 	<title>할인 가격 구하기</title>
 	<link rel="stylesheet" href="css/bargain.css">
 </head>
-<script>
-	function showPrice(){
-		var OriginPrice = 10000;
-		var rate = 50;
-		document.querySelector("#showResult").innerHTML ="상품의 원래 가격은 "+ OriginPrice +"원이고, 할인율은" + rete +" %입니다";
-	}
-</script>
+
 <body>	
 	<div id="contents">
 		<img src="images/sale.png">
@@ -33,4 +27,11 @@
 		<div id="showResult"></div>	
 	</div>	
 </body>
+<script>
+	function showPrice(){
+		var OriginPrice = document.querySelector("#oPrice").value;
+		var rate = document.querySelector("#rate").value;
+		document.querySelector("#showResult").innerHTML ="상품의 원래 가격은 "+ OriginPrice +"원이고, 할인율은" + rate +" %입니다";
+	}
+</script>
 </html>
